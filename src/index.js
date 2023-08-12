@@ -70,7 +70,7 @@ function setupButtons() {
   contactButton.addEventListener("click", renderContact);
   buttonContainer.appendChild(contactButton);
 
-  contentContainer.appendChild(buttonContainer);
+  contentContainer.prepend(buttonContainer); // Prepend the button container to the contentContainer
 }
 
 // Initial page setup
